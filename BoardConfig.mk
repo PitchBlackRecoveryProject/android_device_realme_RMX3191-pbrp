@@ -102,8 +102,10 @@ ENABLE_SCHEDBOOST := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_SKIP_COMPATIBILITY_CHECK := true
 TW_EXCLUDE_APEX := true
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
 
- Android Verified Boot
+# Android Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
