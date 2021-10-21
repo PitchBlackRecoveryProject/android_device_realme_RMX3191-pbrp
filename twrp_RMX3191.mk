@@ -5,6 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -23,6 +26,8 @@ PRODUCT_NAME := twrp_RMX3191
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3191
 PRODUCT_MANUFACTURER := realme
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false	
 
 # fastbootd
 PRODUCT_PACKAGES += \
