@@ -23,3 +23,7 @@ PRODUCT_NAME := twrp_RMX3191
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3191
 PRODUCT_MANUFACTURER := realme
+
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
