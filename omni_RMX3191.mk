@@ -17,12 +17,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/realme/RMX3191/device.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX3191
-PRODUCT_NAME := twrp_RMX3191
+PRODUCT_NAME := omni_RMX3191
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3191
 PRODUCT_MANUFACTURER := realme

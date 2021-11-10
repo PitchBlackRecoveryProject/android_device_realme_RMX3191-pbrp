@@ -6,7 +6,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_RMX3191.mk
+    $(LOCAL_DIR)/omni_RMX3191.mk
 
-COMMON_LUNCH_CHOICES := \
-	twrp_RMX3191-eng
+COMMON_LUNCH_CHOICES := omni_RMX3191-eng
